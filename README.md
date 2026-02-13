@@ -17,6 +17,34 @@
 7. [Glossário](#glossário)
 8. [Requisitos Não Funcionais](#requisitos-não-funcionais)
 9. [Changelog](#changelog)
+10. [📚 Documentação](#-documentação)
+
+---
+
+## 📚 Documentação
+
+### Guias de Colaboração
+
+| Documento | Descrição |
+|-----------|-----------|
+| [CONTRIBUTING](docs/CONTRIBUTING.md) | Guia completo de contribuição |
+| [CODE_OF_CONDUCT](docs/CODE_OF_CONDUCT.md) | Código de conduta |
+| [SECURITY](docs/SECURITY.md) | Política de segurança |
+
+### Padrões e Convenções
+
+| Documento | Descrição |
+|-----------|-----------|
+| [Conventional Commits](docs/CONVENTIONAL_COMMITS.md) | Padrão de mensagens de commit |
+| [Semantic Versioning](docs/SEMANTIC_VERSIONING.md) | Versionamento semântico |
+| [Branching Strategy](docs/BRANCHING_STRATEGY.md) | Estratégia de branches |
+| [Pull Request Guide](docs/PULL_REQUEST_GUIDE.md) | Guia de Pull Requests |
+
+### Configuração
+
+| Documento | Descrição |
+|-----------|-----------|
+| [Repository Setup](docs/REPOSITORY_SETUP.md) | Configuração do repositório |
 
 ---
 
