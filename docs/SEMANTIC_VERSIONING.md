@@ -254,9 +254,9 @@ Informações adicionais que não afetam precedência de versão.
 ### Exemplos
 
 ```
-1.0.0+20240212
+1.0.0+20260213
 1.0.0+sha.5114f85
-1.0.0+20240212.sha.5114f85
+1.0.0+20260213.sha.5114f85
 ```
 
 **Uso:**
