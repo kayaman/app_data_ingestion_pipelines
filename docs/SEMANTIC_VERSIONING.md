@@ -25,7 +25,7 @@ MAJOR.MINOR.PATCH
 - `0.1.0` - Desenvolvimento inicial
 - `1.2.3` - Release estável com patches
 - `2.0.0-alpha.1` - Pré-release alpha
-- `1.0.0+20240212` - Com metadata de build
+- `1.0.0+YYYYMMDD` - Com metadata de build
 
 ### Componentes
 
