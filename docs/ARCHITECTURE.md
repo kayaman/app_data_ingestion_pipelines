@@ -319,15 +319,16 @@ sequenceDiagram
 
 ### Cálculo de Custo (1TB/mês, 7 anos)
 
-| Tier | Volume | $/GB/mês | Mensal | Anual |
-|------|--------|----------|--------|-------|
-| Hot (1m) | 1TB | $0.023 | $23 | $276 |
-| Cool (5m) | 5TB | $0.010 | $50 | $600 |
-| Archive (78m) | 78TB | $0.001 | $78 | $936 |
+| Tier | Volume Acumulado | $/GB/mês | Custo Mensal | Custo Anual |
+|------|------------------|----------|--------------|-------------|
+| Hot (0-30d) | 1TB | $0.023 | $23 | $276 |
+| Cool (31-180d) | 5TB | $0.010 | $50 | $600 |
+| Archive (181d-7yr) | 78TB | $0.001 | $78 | $936 |
 | **Total** | **84TB** | - | **$151** | **$1,812** |
 
-**Sem tiering:** 84TB × $0.023 = $1,932/mês = $23,184/ano  
-**Economia:** $21,372/ano (~92%)
+**Sem tiering (84TB em Hot):** 84TB × $0.023/GB = $1,932/mês = **$23,184/ano**  
+**Com tiering:** $151/mês = **$1,812/ano**  
+**Economia:** $21,372/ano (**~92%**)
 
 ---
 
@@ -353,6 +354,7 @@ sequenceDiagram
 
 ```python
 import pandas as pd
+import pyarrow as pa
 import pyarrow.parquet as pq
 
 df = pd.read_json('s3://bucket/bronze/data.json', lines=True)
