@@ -1,7 +1,5 @@
 version: 2
-
 updates:
-  # Python dependencies
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
@@ -9,46 +7,19 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/Sao_Paulo"
-    open-pull-requests-limit: 10
-    reviewers:
-      - "sabesp/arquitetura"
-    assignees:
-      - "sabesp/tech-leads"
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
       - "python"
     commit-message:
-      prefix: "build"
-      prefix-development: "chore"
-      include: "scope"
-    groups:
-      development-dependencies:
-        dependency-type: "development"
-        patterns:
-          - "pytest*"
-          - "black"
-          - "ruff"
-          - "mypy"
-          - "pre-commit"
-      security-updates:
-        dependency-type: "all"
-        update-types:
-          - "security"
+      prefix: "chore(deps)"
 
-  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "America/Sao_Paulo"
-    open-pull-requests-limit: 5
-    reviewers:
-      - "sabesp/tech-leads"
     labels:
       - "dependencies"
       - "github-actions"
     commit-message:
-      prefix: "ci"
-      include: "scope"
+      prefix: "chore(ci)"
