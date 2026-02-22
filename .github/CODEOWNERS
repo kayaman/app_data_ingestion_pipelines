@@ -1,23 +1,6 @@
-# Default - Arquitetura revisa tudo
-*                           @sabesp/arquitetura
-
-# Documentação
-/docs/                      @sabesp/arquitetura @sabesp/tech-leads
-*.md                        @sabesp/arquitetura
-
-# Configuração de repositório e CI/CD
-/.github/                   @sabesp/tech-leads @sabesp/arquitetura
-/.github/workflows/         @sabesp/tech-leads
-
-# Pipelines de dados
-/pipelines/                 @sabesp/dados
-/src/ingestion/             @sabesp/dados
-/src/transform/             @sabesp/dados
-
-# Infraestrutura
-/infra/                     @sabesp/arquitetura
-/terraform/                 @sabesp/arquitetura
-
-# IA/ML
-/src/ml/                    @sabesp/ia
-/notebooks/                 @sabesp/ia
+*                           @kayaman
+/docs/                      @kayaman
+*.md                        @kayaman
+/.github/                   @kayaman
+/pipelines/                 @kayaman
+/src/                       @kayaman

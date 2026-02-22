@@ -30,6 +30,7 @@
 | [CONTRIBUTING](docs/CONTRIBUTING.md) | Guia completo de contribuição |
 | [CODE_OF_CONDUCT](docs/CODE_OF_CONDUCT.md) | Código de conduta |
 | [SECURITY](docs/SECURITY.md) | Política de segurança |
+| [Pull Request Guide](docs/PULL_REQUEST_GUIDE.md) | Guia de Pull Requests |
 
 ### Padrões e Convenções
 
@@ -37,8 +38,7 @@
 |-----------|-----------|
 | [Conventional Commits](docs/CONVENTIONAL_COMMITS.md) | Padrão de mensagens de commit |
 | [Semantic Versioning](docs/SEMANTIC_VERSIONING.md) | Versionamento semântico |
-| [Branching Strategy](docs/BRANCHING_STRATEGY.md) | Estratégia de branches |
-| [Pull Request Guide](docs/PULL_REQUEST_GUIDE.md) | Guia de Pull Requests |
+| [Branching Strategy](docs/BRANCHING_STRATEGY.md) | Estratégia de branches (Trunk-Based) |
 
 ### Configuração
 
